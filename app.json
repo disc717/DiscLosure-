@@ -39,8 +39,20 @@
       "description": "Add the Heroku app name here. It helps with userbot updates.",
       "required": false
     },
+    "GITHUB_ACCESS_TOKEN": {
+      "description": "Your GITHUB_ACCESS_TOKEN, get it from 'https://github.com/settings/tokens'",
+      "value": ""
+    },
+    "GIT_REPO_NAME": {
+      "description": "Add the GIT_REPO_NAME here. It helps with commit on GitHub.",
+      "required": false
+    },
     "UPSTREAM_REPO_URL": {
       "description": "In case you maintain a fork, add your repo URL here.",
+      "required": false
+    },
+    "UPSTREAM_REPO_BRANCH": {
+      "description": "In case you maintain a fork, add your repo BRANCH here.",
       "required": false
     },
     "COUNTRY": {
@@ -73,7 +85,7 @@
     },
     "GENIUS_API_TOKEN": {
       "description": "Get your own api token from https://genius.com/developers",
-      "required": true
+      "required": false
     },
     "BOTLOG": {
       "description": "Incase you want to turn off logging, put this to false",
@@ -114,6 +126,10 @@
     "TMP_DOWNLOAD_DIRECTORY": {
       "description": "Download location for many modules (GDrive, .download etc..)",
       "value": "./downloads/"
+    },
+    "QUOTES_API_TOKEN": {
+      "description": "Enhance ur text to sticker. Get your own API token from http://antiddos.systems.",
+      "required": false
     },
     "CLEAN_WELCOME": {
       "description": "When a new person joins, the old welcome message is deleted.",
