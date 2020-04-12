@@ -20,7 +20,6 @@ RUN apk add --no-cache=true --update \
     gcc \
     g++ \
     git \
-    sudo \
     aria2 \
     util-linux \
     libevent \
@@ -42,8 +41,6 @@ RUN apk add --no-cache=true --update \
     pv \
     jq \
     wget \
-    python \
-    python-dev \
     python3 \
     python3-dev \
     readline-dev \
@@ -84,4 +81,5 @@ COPY ./sample_config.env ./userbot.session* ./config.env* /root/userbot/
 # Install requirements
 #
 RUN pip3 install -r requirements.txt
+RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 CMD ["python3","-m","userbot"]
